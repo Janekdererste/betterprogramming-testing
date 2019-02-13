@@ -36,5 +36,24 @@
             <artifactId>matsim</artifactId>
             <version>0.11.0-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.matsim.contrib</groupId>
+            <artifactId>emissions</artifactId>
+            <version>0.11.0-SNAPSHOT</version>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <!-- Set Java Version to JAVA 8 -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
